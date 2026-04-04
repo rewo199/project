@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    font-family: 'Inter','Kanit', sans-serif;
+    background: white;
+    padding-top: 40px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #F0EFFF;
+    padding: 40px ;
+    align-items: center;
+    gap: 40px;
+ 
+}
+.container h2 {
+    font-weight: 600;
+    font-size: 25px;
+}
+.container p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.container {
+   margin-bottom: 30px;
+    width: 300px;
+    max-width: 320px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: -40px;
+}
+.card {
+    text-align: left;
+    width: 100%;
+    width: 350px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background:  #eee;
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    background: #ddd;
+    cursor: pointer;
+    font-weight: 500;
+}
+.tab.active {
+    background: #6C3CE1;
+    color: white;
+  
+}
+.tab:first-child {
+    border-radius: 10px 0 0 10px;
+}
+.tab:last-child {
+    border-radius: 0 10px 10px 0;
+}
+.input {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   box-sizing: border-box;
+
+   border-radius: 8px;
+   border: 1px solid #ccc; 
+   outline: none;
+}
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #6C3CE1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sub-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.sub-tab {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color:#333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.sub-tab:hover {
+    border-color: #bbb;
+}
+.sub-tab.active {
+    color: #6C3CE1;
+    border-color: #6C3CE1;
+    font-weight: 600;
+}
+label.upload-box {
+    display: block !important;
+    border: 2px dashed #ccc !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    text-align: center v;
+    cursor: pointer !important;
+    color: #777 !important;
+    margin: 15px 0 !important;
+    text-align: center !important;
+}
+.upload-box:hover {
+    border-color: #6C3CE1 !important;
+    color: #6C3CE1 !important;
+}
