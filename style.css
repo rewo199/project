@@ -139,3 +139,170 @@ label.upload-box {
     border-color: #6C3CE1 !important;
     color: #6C3CE1 !important;
 }
+
+/* =========================================
+   ส่วนตกแต่งหน้าค้นหางาน (Job Feed)
+   ========================================= */
+
+/* โครงสร้างหลักของหน้า (ถ้าคุณมี .container อยู่แล้ว ไม่ต้องก๊อปส่วนนี้ไปก็ได้ครับ) */
+#job-feed-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =========================================
+   1. ส่วนหัว (ค้นหาและจัดเรียง)
+   ========================================= */
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+}
+
+.header-search h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.sort-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sort-box select {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* =========================================
+   2. การ์ดแสดงงาน (Job Card)
+   ========================================= */
+.job-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03); /* เงาบางๆ ให้ดูมีมิติ */
+    border: 1px solid #f0f0f0;
+    gap: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้การ์ด */
+.job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   3. ไอคอนตัวย่อชื่อร้าน (Avatar)
+   ========================================= */
+.job-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #F8B179; /* สีส้มตามดีไซน์ */
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/* =========================================
+   4. รายละเอียดข้อความในการ์ด
+   ========================================= */
+.job-details {
+    flex-grow: 1;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.job-title {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.bookmark-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.bookmark-icon:hover {
+    color: #F27D16;
+}
+
+.company-name {
+    margin: 0 0 4px 0;
+    font-size: 13px;
+    color: #888;
+}
+
+.location-distance {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* =========================================
+   5. ป้ายกำกับ (Tags) เช่น ค่าจ้าง, ประเภทงาน
+   ========================================= */
+.job-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.tag-wage {
+    background-color: #F27D16;
+    color: white;
+}
+
+.tag-type {
+    border: 1px solid #7B61FF;
+    color: #7B61FF;
+    background-color: white;
+}
+
+/* เวลาที่โพสต์ */
+.post-time {
+    margin: 0;
+    font-size: 11px;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
